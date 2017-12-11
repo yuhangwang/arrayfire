@@ -4,6 +4,10 @@ project(ArrayFire-Examples
   VERSION 3.5.0
   LANGUAGES CXX)
 
+if (NOT ASSETS_DIR)
+    option(ASSETS_DIR "Please provide the path to assets for ArrayFire examples")
+endif (NOT ASSETS_DIR)
+
 if(WIN32)
   add_definitions(-DWIN32_LEAN_AND_MEAN)
   unset(CMAKE_RUNTIME_OUTPUT_DIRECTORY)

@@ -6,7 +6,7 @@ project(ArrayFire-Example-Linear-Algebra
 
 find_package(ArrayFire)
 
-add_definitions("-DASSETS_DIR=\"${ASSETS_DIR}\"")
+add_definitions(-DASSETS_DIR=\"${ASSETS_DIR}\")
 
 if(ArrayFire_CPU_FOUND)
   # Bagging example
